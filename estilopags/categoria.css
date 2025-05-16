@@ -1,0 +1,450 @@
+
+/*  .cabeca1 .Categorias .opcoes .busca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores do site */
+    --cor1:#074073;
+    --cor2:#F2B705;
+    --cor3:#F2A71B;
+    --cor4:#F27405;
+    --cor5:#F2F2F2;
+
+    /* Fontes e tamanhos */
+    --fontsite:'Montserrat',Arial,sans-serif;
+    --font-size-padrao: 1rem;
+    --font-size-pequeno: 1.2rem;
+    --font-size-medio: 1.5rem;
+    --font-size-grande: 2rem;
+    --cor-branca: var(--cor5);
+    --cor-preta: #000000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: var(--fontsite);
+    color:var(--cor5) ;
+    list-style: none;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor5);
+    overflow-x: hidden;
+}
+body a{
+    color:var(--cor5) ;
+}
+/* Estilização da Header */
+.menu{
+    background-color: var(--cor1);
+    padding: 10px 20px;
+}
+.nav-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 50px;
+    font-size: var(--font-size-pequeno);
+    list-style: none;
+}
+.nav-list-segunda{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width:80%;
+}
+.material-symbols-outlined {
+    font-size: 35px;
+    color:var(--cor5);
+    /* background-color: #F27405; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+.mais{
+    color: grey;
+    font-size: 80px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 100,
+      'GRAD' 0,
+      'opsz' 24
+  }
+.hb-funcoes{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .buscar{
+        display: none;
+    }
+    .hb-funcoes{
+        display: flex;
+    }
+    .nav-list{
+        display: none;
+    }
+    /* .nav-list-segunda{
+        display: block;
+    } */
+    .nav-list-segunda  .op{
+        display: block;
+    }
+    .buscar-segunda{
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links a{
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        background-color:var(--cor1);
+        text-decoration: none;
+    }
+    .nav-links a:hover{
+        background-color: var(--cor3);
+        color: var(--cor1);
+    }
+    
+    
+}
+
+/* Ofertas do dia */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.ofertaD{
+    /* background-color: var(--cor2); */
+    width: 200px;
+    /* height: 100px; */
+    margin-top:16px;
+    /* margin-right: 5px; */
+    border-radius: 10px;
+    border: 1px solid #00000044;
+    box-shadow: 1px 2px 3px #00000044;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.ofertaD:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+}
+
+.pro {
+    width: 100%;
+    /* height: 60%; */
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.ofertaD:hover .pro {
+    transform: scale(1.1); 
+}
+.descricao{
+    color: var(--cor-preta);
+}
+.preco{
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 5px;
+    color: var(--cor4);
+}
+
+/* Estilização Footer */
+.main-footer{
+    background-color: var(--cor1);
+    display: flow-root;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.footer-content{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    /* border-top: 2px solid #f2f2f228; */
+}
+.logof{
+    width: 100%;
+}
+.footer-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    
+}
+.footer-section h4 {
+    width: 100%; 
+    text-align: left; 
+    margin: 0 0 8px 0; 
+    color: var(--cor5); 
+    font-size: 1.1rem;
+}
+.footer-links{
+    padding-top: 9px;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+
+.botao{
+    text-decoration: none;
+    background-color: var(--cor3);
+    color:#074073;
+    font-size: 13px;
+    font-weight: bold;
+    /* border: 1px solid rgb(30, 4, 52); */
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+.containerb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menucontainer1{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #F2A71B;
+
+}
+.menucontainer1 ul li:hover{
+    padding: 3px 20px;
+}
+.menucontainer1 ul li a{
+    padding: 3px 30px;
+}
+
+.categorias1{
+    display: flex;
+    gap: 50px;
+    font-size: var(--font-size-pequeno);
+    list-style: none;
+    padding: 10px 30px;
+}
+
+/* .mercearia:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+    background-color: #F2B705;
+}
+.limpeza:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+    background-color: #F2B705;
+} */
+/* .hortifruit:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    z-index: 10; 
+    background-color: #F2B705;
+} */
+
+.hortifruit:hover,
+.limpeza:hover,
+.mercearia:hover,
+.bebidas:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    background-color: #F2B705;
+    padding: 3px 10px;
+    font-weight: 500;
+}
+.nav-categoria{
+    background-color: #F2A71B;
+    
+}
+.nav-categoria>.container{
+    max-width: 50%;
+    margin: auto;
+    
+}
+.nav-categoria ul>li{
+    list-style: none;
+}
+.nav-categoria ul {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-categoria .link:hover{
+    background-color: #F2B705 ;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    font-weight: 500;
+}
+.nav-categoria .link{
+    padding: 3px 10px;
+
+}
+.teste{
+    color:#000000
+}
+
+.mercearia-conteudo,
+.limpeza-conteudo,
+.hortifruit-conteudo,
+.bebidas-conteudo{
+    color: #000000;
+    display: flex;
+    margin: 10px;
+}
+.mercearia-t,
+.limpeza-t,
+.hortifruit-t,
+.bebidas-t{
+    border-bottom: 3px solid var(--cor4);
+    /* width: 20%; */
+}
+.mercearia-section,
+.limpeza-section,
+.hortifruit-section,
+.bebidas-section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.mercearia-produtos,
+.limpeza-produtos,
+.hortifruit-produtos,
+.bebidas-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mais{
+/* margin: 50%; */
+padding: 53px;
+}
+
+.botao-saibamais{
+    text-decoration: none;
+    /* background-color: rgb(211, 208, 208); */
+    color:#706d6dbc;
+    font-size: 22px;
+    font-weight: bold;
+    /* border: 1px solid rgb(30, 4, 52); */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px 0px 5px;
+    cursor: pointer;
+}
+.bebidas-t,
+.mercearia-t,
+.limpeza-t,
+.hortifruit-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .mercearia-produtos,
+    .limpeza-produtos,
+    .hortifruit-produtos,
+    .bebidas-produtos{
+        justify-content: space-evenly;
+    }
+
+}
+@media (max-width: 425px) {
+    .ofertaD {
+        width: 185px;
+    }
+    .PadraoS {   
+        padding-left: 0;
+    }
+    
+.mercearia-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px; 
+}
+.limpeza-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 100px; 
+}
+.hortifruit-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 100px;
+}
+.bebidas-t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 100px; 
+}
+.mercearia-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .footer-content{
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .footer-section{
+        width: 50%;
+        padding-bottom: 35px;
+    }
+    .gmail{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .footer-content{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .logof {
+        width: 100px;
+        
+    }
+    .footer-section .logolink{
+        padding-bottom: 35px;
+    }
+}

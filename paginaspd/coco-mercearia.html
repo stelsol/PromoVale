@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promovale</title>
+    <link rel="shortcut icon" href="img/LogoPromoVale_pequena.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../estilopags/PgProduto.css">
+    <!-- <link rel="stylesheet" href="responsivo.css" media="screen and (max-width: 600px)">
+</head> -->
+<body onresize=" mudoutamanho()">
+    <header class="menu "> 
+            <nav class="nav-bar container">
+                <div class="container-logo">
+                    <a href="../index.html"><img src="img/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-links"><a href="../categoria.html">Mercado</a></li>
+                        <li class="nav-links"><a href="../PgCupons.html">Cupons</a></li>
+                        <li class="nav-links"><a href="../sobrenos.html">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="buscar">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="hamburguer hb-funcoes">
+                    <span class="material-symbols-outlined" onclick="menushow()">menu</span>
+                </div>
+            </nav>
+            <div class="nav-list-segunda open">
+                <ul>
+                        <li class="nav-links"><a href="../categoria.html">Mercado</a></li>
+                        <li class="nav-links"><a href="../PgCupons.html">Cupons</a></li>
+                        <li class="nav-links"><a href="../sobrenos.html">Sobre nós</a></li>
+                </ul>
+                <div class="buscar-segunda">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+            </div>
+        </header>
+    <main class="container">  
+        <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
+
+        <div class="cardcontainer">
+            <div class="fundo-produto">
+                <div class="produto-novo">
+                    <div class="imagem-produto">
+                        <img src="img/mercearia/coco-ralado.png" alt="Agua de coco">
+                    </div>
+                    <div class="descricao-produto">
+                        <h2 class="titulo-descricao" >Coco Ralado Sococo 100G</h2>
+                            <div class="divisor"></div>
+                        <h3 class="sub-descricaoproduto">Descrição</h3>
+                        <p>
+                          Coco Ralado puro, sem adição de açúcar, desidratado e parcialmente desengordurado 
+                        </p>
+                        <div class="precoproduto">
+                            R$ 9,90
+                        </div>
+                        <button class="botao-esquerdo">(R$55,00 / Quilogramas)</button>
+                    </div>
+                </div>
+                <div class="produto-novo "> 
+                    <div class="imagem-produto">
+                    </div> 
+                    <div class="descricao-produto ">
+                        <h3 class="beneficios-produto"> Benefícios do Coco Ralado</h3>
+                        <p class="descricao-beneficios-produto">
+                        O coco ralado oferece diversos benefícios para a saúde, como auxiliar na digestão devido ao alto teor de fibras, fortalecer o sistema imunológico por conter ácido láurico com propriedades antivirais e antibacterianas, e fornecer energia de longa duração. Além disso, o coco ralado contribui para a saúde da pele, ajuda no controle do peso e pode ser usado em diversas receitas. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="localizacao-novo">
+                <div class="imagem-local">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0032866147008!2d-45.57802622380337!3d-23.02365154205985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf858165b2109%3A0x898d374b5f8bb188!2sTenda%20Atacado%20-%20Taubat%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1745503838656!5m2!1spt-BR!2sbr" width="150" height="150" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                </div>
+                <div class="descricao-local">   
+                    <h3 class="nome-mercado"> Tenda Atacado</h3>
+                    <p class="descricao-local-endereco">
+                        Avenida Charles Schneider, 850 - Parque Senhor do Bonfim - Taubaté - SP CEP: 12040001
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="logolink ">
+                <a href="../index.html"><img src="img/LogoPromoVale_pequena.webp" alt="Logo LogoPromoVale_pequena" class="logof"></a>
+            </div>
+            <section class="footer-section linkmenu">
+                <h4>Links rápidos</h4>
+                <a href="../categoria.html" class="footer-links">Mercado</a>
+                <a href="../PgCupons.html" class="footer-links">Cupons</a>
+                <a href="../sobrenos.html" class="footer-links">Sobre Nós</a>
+            </section>
+            <section class="footer-section linkcat">
+                <h4>Links Categorias</h4>
+                <a href="../mercearia.html" class="footer-links">Mercearia</a>
+                <a href="../hortfruit.html" class="footer-links">Hortifruti</a>
+                <a href="../bebida.html" class="footer-links">Bebidas</a>
+                <a href="../limpeza.html" class="footer-links">Produtos de limpeza</a>
+            </section>
+            <section class="footer-section contato">
+                <h4>Contatos</h4>
+                <a href="#" class="footer-links">Promovale@gmail.com</a>
+                <a href="#" class="footer-links">(12)98222-3333</a>
+            </section>
+        </div>
+    </footer>
+    <script src="../js/interacoes.js"></script>
+</body>
+</html>

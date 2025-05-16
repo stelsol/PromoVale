@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promovale</title>
+    <link rel="shortcut icon" href="imagens/LogoPromoVale_pequena.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="estilopags/inicio.css">
+</head> 
+<body onresize=" mudoutamanho()">
+    <!-- Menu responsivo -->
+    <header class="menu "> 
+        <nav class="nav-bar container">
+            <div class="container-logo">
+                <a href="index.html"><img src="imagens/LogoPromoVale_pequena.webp" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-links"><a href="categoria.html">Mercado</a></li>
+                    <li class="nav-links"><a href="PgCupons.html">Cupons</a></li>
+                    <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="buscar">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <div class="hamburguer hb-funcoes">
+                <span class="material-symbols-outlined" onclick="menushow()">menu</span>
+            </div>
+        </nav>
+        <div class="nav-list-segunda ">
+            <ul>
+                <li class="nav-links"><a href="categoria.html">Mercado</a></li>
+                <li class="nav-links"><a href="PgCupons.html">Cupons</a></li>
+                <li class="nav-links"><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+            <div class="buscar-segunda">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">  
+        <!-- O container esta conectado com o menu, podemos criar os conteudos tranquilamente -->
+        <div class="conteudo">
+            <section class="PadraoS Carrosel-w">
+                <!-- Carrosel de imagens -->
+                <div class="carrossel">
+                    <div class="carrossel-container">
+                        <div class="slide">
+                            <img src="imagens/Banner.webp" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/banner2.webp" alt="Slide 2">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/banner3.webp" alt="Slide 3">
+                        </div>
+                    </div>
+            
+                    <!-- Botões de navegação -->
+                    <div class="carrossel-nav">
+                        <button class="nav-button prev">❮</button>
+                        <button class="nav-button next">❯</button>
+                    </div>
+            
+                    <!-- Indicadores (bolinhas) -->
+                    <div class="indicadores">
+                        <span class="indicador active" data-index="0"></span>
+                        <span class="indicador" data-index="1"></span>
+                        <span class="indicador" data-index="2"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="PadraoS ">
+                <!-- Fica a section Ofertas do dia -->
+                <h3 class="areaO">OFERTAS DO DIA</h3>
+                    <div class="cards">
+                            <a href="paginaspd/PgProdutoalface.html" class="ofertaD">
+
+                                <div class="produto">
+                                    <img src="imagens/hortfruti/Alface_Americana.webp" alt="Alface Americana" class="pro">
+                                    <p class="descricao">Alface Americana</p>
+                                    <p class="preco">R$ 5,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="paginaspd/PgProdutoalho.html" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="imagens/hortfruti/alho-roxo1.webp" alt="Alho roxo" class="pro">
+                                    <p class="descricao">Alho Roxo</p>
+                                    <p class="preco">R$ 4,50</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="paginaspd/img/bebidas/350x350_kero_coco.webp" alt="redbull" class="pro">
+                                    <p class="descricao">Água de coco</p>
+                                    <p class="preco">R$ 5,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="imagens/limpeza/sabao-em-po.webp" alt="Sabão em pó" class="pro">
+                                    <p class="descricao">Sabão em pó</p>
+                                    <p class="preco">R$ 24,50</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="imagens/mercearia/AzeitedeOliva.webp" alt="Azeite" class="pro">
+                                    <p class="descricao">azeite de oliva</p>
+                                    <p class="preco">R$ 30,99</p>
+                                </div>
+
+                            </a>
+
+                            <a href="#" class="ofertaD">
+                                
+                                <div class="produto">
+                                    <img src="paginaspd/img/mercearia/mucilon.png" alt="nescau" class="pro">
+                                    <p class="descricao">Mucilon</p>
+                                    <p class="preco">R$ 11,00</p>
+                                </div>
+
+                            </a>
+                    </div>
+            </section>
+            <section class="PadraoS mercado">
+                <!-- Menu de categorias -->
+                <h3 class=" mercadoT">MERCADO</h3>
+                <div class="catpro">
+                    <a href="mercearia.html" class="grupo1">
+                        <img src="imagens/supermercado.jpg" alt="supermercado" class="catimg">
+                        <p >Mercearia</p>
+                    </a>
+
+                    <a href="bebida.html" class="grupo1">
+                        <img src="imagens/supermercado.jpg" alt="supermercado" class="catimg">
+                        <p >Bebidas</p>
+                    </a>
+                    
+                    <a href="limpeza.html" class="grupo1">
+                        <img src="imagens/supermercado.jpg" alt="supermercado" class="catimg">
+                        <p >Produtos de limpeza</p>
+                    </a>
+                    
+                    <a href="hortfruit.html" class="grupo1">
+                        <img src="imagens/supermercado.jpg" alt="supermercado" class="catimg">
+                        <p >Hortifruti</p>
+                    </a>
+                        
+                </div>
+            </section>
+            <!-- Redes que são parceiras -->
+            <section class="PadraoS parceiros">
+                <h3 class="areaO">REDES PARCEIRAS</h3>
+                <div class="sparceiros">
+                    <img src="imagens/70x56_carrefour.webp" alt="Logo carrefour" class="marca">
+                    <img src="imagens/80x80_logoMax.webp" alt="" class="marca">
+                    <img src="imagens/100x100_logoTenda.webp" alt="" class="marca">
+                    <img src="imagens/100x100_semar-supermercados-logo.webp" alt="" class="marca">
+                    <img src="imagens/100x21_Extra_logo.webp" alt="" class="marca">
+                    <img src="imagens/100x28_atacadao-logo.webp" alt="" class="marca">
+                    <img src="imagens/100x28_logoNagumo.webp" alt="" class="marca">
+                    <img src="imagens/100X65_logoroldao.webp" alt="" class="marca">
+                    <img src="imagens/100x75_LogoShibata.webp" alt="" class="marca">
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer class="main-footer">
+        <!-- Footer contendo links de menu e contato -->
+        <div class="footer-content container">
+            <section class="logolink ">
+                <a href="index.html"><img src="imagens/LogoPromoVale_pequena.webp" alt="Logo LogoPromoVale_pequena" class="logof"></a>
+            </section>
+            <section class="footer-section linkmenu">
+                <h4>Links rápidos</h4>
+                <a href="categoria.html" class="footer-links">Mercado</a>
+                <a href="PgCupons.html" class="footer-links">Cupons</a>
+                <a href="sobrenos.html" class="footer-links">Sobre Nós</a>
+            </section>
+            <section class="footer-section linkcat">
+                <h4>Links Categorias</h4>
+                <a href="mercearia.html" class="footer-links">Mercearia</a>
+                <a href="hortfruit.html" class="footer-links">Hortifruti</a>
+                <a href="bebida.html" class="footer-links">Bebidas</a>
+                <a href="limpeza.html" class="footer-links">Produtos de limpeza</a>
+            </section>
+            <section class="footer-section contato">
+                <h4>Contatos</h4>
+                <a href="#" class="footer-links gmail">Promovale@gmail.com</a>
+                <a href="#" class="footer-links">(12)98222-3333</a>
+            </section>
+        </div>
+        
+    </footer>
+    <!-- Conexão com o js -->
+    <script src="js/interacoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/*  .cabeca1 .Categorias .opcoes .busca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cores do site */
+    --cor1:#074073;
+    --cor2:#F2B705;
+    --cor3:#F2A71B;
+    --cor4:#F27405;
+    --cor5:#F2F2F2;
+
+    /* Fontes e tamanhos */
+    --fontsite:'Montserrat',Arial,sans-serif;
+    --font-size-padrao: 1rem;
+    --font-size-pequeno: 1.2rem;
+    --font-size-medio: 1.5rem;
+    --font-size-grande: 2rem;
+    --cor-branca: var(--cor5);
+    --cor-preta: #000000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: var(--fontsite);
+    list-style: none;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor5);
+    overflow-x: hidden;
+}
+header  a,footer a{
+    color:var(--cor5) ;
+}
+/* Estilização da Header */
+.menu{
+    background-color: var(--cor1);
+    padding: 10px 20px;
+}
+.nav-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 50px;
+    font-size: var(--font-size-pequeno);
+    list-style: none;
+}
+.nav-list-segunda{
+    display: none;
+}
+.logo{
+    width:80%;
+}
+.material-symbols-outlined {
+    font-size: 35px;
+    color:var(--cor5);
+    /* background-color: #F27405; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+}
+.hb-funcoes{
+    display: none;
+}
+
+/* media querys  */
+@media screen and (max-width: 700px) {
+    .buscar{
+        display: none;
+    }
+    .hb-funcoes{
+        display: flex;
+    }
+    .nav-list{
+        display: none;
+    }
+    /* .nav-list-segunda{
+        display: block;
+    } */
+    .nav-list-segunda  .op{
+        display: block;
+    }
+    .buscar-segunda{
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links a{
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        background-color:var(--cor1);
+    }
+    .nav-links a:hover{
+        background-color: var(--cor3);
+        color: var(--cor1);
+    }
+    
+    
+}
+/* Estilização do corpo e conteudo */
+.container{
+    max-width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+/* Main/Conteudo */
+.conteudo{
+    /* main/largura do site  */
+    background-color:var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    /* border: 1px solid black; */
+}
+
+.cupon-grid {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 30px;
+    /* width: 100%; */
+    /* margin: 10%; */
+    /* padding: 10px 20px; */
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.cupon-card {
+    background:#043f73f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #ccc;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 10px 30px; */
+    width: 320px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    gap: 10px;
+    /* margin: auto; */
+}
+.cupon-card h3{
+font-size: 15px;
+/* margin: 10px 0px 10px 0px; */
+}
+.cod{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid var(--cor-branca); */
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+.image-placeholder {
+    background: #d9c91c;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+button {
+    background-color:#f27405e8;
+    border: none;
+    border: 2px solid transparent;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    border: 2px solid var(--cor4);
+    background-color: #F2A71B;
+}
+
+/* Estilização Footer */
+.main-footer{
+    background-color: var(--cor1);
+    display: flow-root;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.footer-content{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    /* border-top: 2px solid #f2f2f228; */
+}
+.logof{
+    width: 80%;
+    padding-left: 10px;
+}
+.footer-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    
+}
+.footer-section h4 {
+    width: 100%; 
+    text-align: left; 
+    margin: 0 0 8px 0; 
+    color: var(--cor5); 
+    font-size: 1.1rem;
+}
+.footer-links{
+    padding-top: 9px;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+/* Media querys */
+@media screen and (max-width: 700px) {
+    .cupon-grid{
+        justify-content: center;
+    }
+    .cupon-card{
+        width: 300px;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+    .footer-section{
+        width: 50%;
+        padding-bottom: 35px;
+    }
+    .gmail{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .cupon-card{
+        width: 300px;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .logof {
+        width: 100px;
+        
+    }
+    .footer-section .logolink{
+        padding-bottom: 35px;
+    }
+}
