@@ -160,6 +160,14 @@ html,body{
     padding: 50px;
     background-color: rgba(211, 211, 211, 0.274);
 }
+.marca{
+    background-color: var(--cor1);
+    width: 100px;
+    padding: 20px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 3px #00000044;
+}
 /* Marcas parceiras */
 .logos-p{
     

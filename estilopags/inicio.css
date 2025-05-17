@@ -337,13 +337,14 @@ body a{
     gap: 25px;
     margin: 10px 0px;
 }
-/* .marca{
-    background-color: #d1cecead;
-    width: 90px;
+.marca{
+    background-color: var(--cor1);
+    width: 100px;
+    padding: 20px;
     height: 90px;
     border-radius: 50%;
     box-shadow: 1px 2px 3px #00000044;
-} */
+}
 
 
 /* Estilização Footer */
